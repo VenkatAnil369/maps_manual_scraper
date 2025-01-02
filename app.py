@@ -78,7 +78,7 @@ if st.button('Manual Search'):
 
 
 
-def parse_landscaping_data(input_text, selected_sub_district=""):
+def parse_landscaping_data(input_text):
     # Initialize lists to store parsed data
     names = []
     roles = []
