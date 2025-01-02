@@ -1,19 +1,12 @@
 import json
 import pandas as pd
 import streamlit as st
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from webdriver_manager.chrome import ChromeDriverManager
-import time
-import streamlit as st
 import pandas as pd
 import re
 from io import StringIO
+import openpyxl
+import re
+from io import BytesIO
 
 
 # Load the data from the 'data.json' file
@@ -82,11 +75,7 @@ if st.button('Manual Search'):
     st.markdown(f"[Click here to search manually on Google Maps]({maps_url})", unsafe_allow_html=True)
 
 
-import pandas as pd
-import openpyxl
-import re
-from io import BytesIO  # Import BytesIO
-import streamlit as st
+
 
 
 def parse_landscaping_data(input_text, selected_sub_district=""):
